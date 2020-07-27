@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="https://unpkg.com/jquery@3.3.1/dist/jquery.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/web3@0.20.5/dist/web3.min.js"></script>
+        <!-- The generated javascript and app.js will be substituted in below -->
+        <!-- JAVASCRIPT -->
+
+        <!-- The app.css contents will be substituted in below -->
+        <!-- STYLE -->
+    </head>
+    <body>
+        <div id="welcome-container">
+            <h1>Welcome!</h1>
+            <h3>Please deploy (<img src="/static/img/rocket-ship.svg" color="#fff" height="14" width="14">) your contract to begin.</h3>
+        </div>
+          <div id="main-container" class="hidden">
+            <!-- Form fields for Simple Open Auction -->
+            <div id="create" class="tabcontent">
+                <h2>Simple Open Auction</h2>
+                <div class="input-group">
+                    <h3>Bidder Address</h3>
+                    <input type="text" id="enter-address" placeholder="Enter bidder address..." />
+                </div>
+                <div class="input-group">
+                    <h3>Bid Amount</h3>
+                    <input type="number" id="enter-amount" placeholder="Enter bid amount..." />
+                </div>
+                <div class="input-group">
+                    <button class="btn" id="button-bid">Bid</button>
+                </div>
+            </div>
+            <!-- Form fields for checking address balance -->
+            <div id="bids" class="tabcontent">
+                <h2>Check highest Bidder & Bid</h2>
+                <div class="input-group">
+                    <button class="btn" id="button-hbidder">Check highest bidder</button>
+                </div>
+                <div class="input-group">
+                    <button class="btn" id="button-hbid">Check highest bid</button>
+                </div>
+            </div>
+            <h1 class="text message">Highest Bidder:&nbsp;<span id="msghbidder"></span></h1>
+            <h1 class="text message">Highest Bid:&nbsp;<span id="msghbid"></span></h1>
+        </div>
+    </body>
+</html>
